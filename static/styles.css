@@ -19,7 +19,9 @@
     align-content: center;
 }
 
-
+#spliff {
+    margin-left: 15px;
+}
 /* .carousel-control-next,
 .carousel-control-prev, 
 .carousel-indicators  {

@@ -32,7 +32,7 @@
     <header>
         <!-- navbar-button -->
         <nav class="navbar navbar-dark text-info bg-dark">
-            <h1>Chongke blog</h1>
+            <h1 id="spliff">TheSpliff</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
             </button> 
@@ -56,14 +56,12 @@
         </div>
 
         <div class="container text-left" id="content">
-            <h3>Dito Content man!</h3>
-            <p>puro kachongkean lng dito puro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng dito</p>
+            <h3>Basic Steps for Growing Cannabis:</h3>
+                {% for paragraph in content.split('\n') %}
+                    <p>{{ paragraph }}</p>
+                {% endfor %}
         </div>
- 
-        <div class="container text-left" id="content">
-            <h3>Dito Content man!</h3>
-            <p>puro kachongkean lng dito puro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng ditopuro kachongkean lng dito</p>
-        </div>
+
 
         <div class="container img-fluid" id="carousel-img">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
