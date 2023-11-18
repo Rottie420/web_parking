@@ -56,10 +56,15 @@
         </div>
 
         <div class="container text-left" id="content">
-            <h3>Basic Steps for Growing Cannabis:</h3>
-                {% for paragraph in content.split('\n') %}
-                    <p>{{ paragraph }}</p>
-                {% endfor %}
+            <div class="row justify-content-md-center">
+                 <div class="col-md-auto">
+                    <h3>Basic Steps for Growing Cannabis:</h3>
+                        {% for paragraph in content.split('\n') %}
+                            <p>{{ paragraph }}</p>
+                        {% endfor %}
+                </div>
+            </div>
+            </div>
         </div>
 
 
