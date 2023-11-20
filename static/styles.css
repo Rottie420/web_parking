@@ -5,6 +5,13 @@
 }
 
 
+#nav-list {
+    align-content: right;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color:  #fff;
+}
+
 #photo-1 {
     width: 350px;
     height: 300px;
