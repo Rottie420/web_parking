@@ -3,12 +3,15 @@ from flask import Flask, render_template, send_from_directory
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
 @app.route('/')
-def home_page():
+def landing_page():
+  return render_template('main.html')
+
+@app.route('/homegrown')
+def homegrown_page():
   f = open('contents/basics.txt', "r")
   content = f.read()
   f.close()
-
-  return render_template('home.html', content=content)
+  return render_template('homegrown.html', content=content)
   
 
 @app.route('/robots.txt')

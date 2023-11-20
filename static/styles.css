@@ -15,7 +15,7 @@
 #photo-1 {
     width: 350px;
     height: 300px;
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 
@@ -29,6 +29,12 @@
 #spliff {
     margin-left: 15px;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* .carousel-control-next,
 .carousel-control-prev, 
 .carousel-indicators  {
