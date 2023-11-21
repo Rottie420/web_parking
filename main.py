@@ -13,7 +13,13 @@ def homegrown_page():
   f.close()
   return render_template('homegrown.html', content=content)
   
-
+@app.route('/techstuff')
+def techstuff_page():
+  f = open('contents/productverification.txt', "r")
+  content = f.read()
+  f.close()
+  return render_template('techstuff.html', content=content)
+  
 @app.route('/robots.txt')
 def robots_txt():
     return send_from_directory(app.static_folder, 'robots.txt')

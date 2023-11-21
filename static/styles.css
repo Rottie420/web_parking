@@ -2,12 +2,11 @@ body {
     background-image: linear-gradient(to top, #051937, #123d5a, #2d647a, #528d98, #7fb7b4);
 }
 
+
 #content {
-    margin-top: 50px;
     font-family: 'Open Sans';
     font-size: 16px;
 }
-
 
 #nav-list {
     font-family: 'Open Sans';

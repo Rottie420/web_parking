@@ -40,7 +40,7 @@
                       </div>
 
                       <div>
-                        <a href="/homegrown" style="text-decoration: none; color: white; line-height: 2.5em;">TECHSTUFF</a>
+                        <a href="/techstuff" style="text-decoration: none; color: white; line-height: 2.5em;">TECHSTUFF</a>
                       </div>
 
                       <div>
@@ -67,14 +67,14 @@
     <body>
         <div class="container" style="margin-top: 100px;">
           <div class="row justify-content-md-center">
-            <div class="col-md-auto">
+            <div class="col-md-8">
                 <div class="card h-100">
                       <img src="static/spacegrown.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <p class="btn btn-secondary">homegrown</p>
                         <h3>Basic Steps for Growing Cannabis:</h3>
                         {% for paragraph in content.split('\n') %}
-                            <p>{{ paragraph }}</p>
+                            <p id="content">{{ paragraph }}</p>
                         {% endfor %}
                       </div>
 
