@@ -23,7 +23,7 @@
     <header>
         <!-- navbar-button -->
         <nav class="navbar navbar-dark text-info bg-dark">
-            <img src="static/webologo1.jpg" class="img-fluid" alt="Responsive image">
+            <img src="static/weblogo2.jpg" class="img-fluid" alt="Responsive image">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
             </button>  
@@ -65,28 +65,28 @@
   
   
     <body>
-        <!-- img-container -->
-        <div class="container-fluid d-flex justify-content-center">
-            <img src="static/img_1.png" class="img-fluid" alt="Responsive image" id="photo-1">
-        </div>
-
-        <div class="container text-left" id="content">
-            <div class="row justify-content-md-center">
-                 <div class="col-md-auto">
-                    <h3>Basic Steps for Growing Cannabis:</h3>
+        <div class="container" style="margin-top: 100px;">
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="card h-100">
+                      <img src="static/spacegrown.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="btn btn-secondary">homegrown</p>
+                        <h3>Basic Steps for Growing Cannabis:</h3>
                         {% for paragraph in content.split('\n') %}
                             <p>{{ paragraph }}</p>
                         {% endfor %}
+                      </div>
+
                 </div>
             </div>
-            </div>
         </div>
-
+            
         <!-- donate-clicks!!! -->
         <div class="container img-fluid" id="carousel-img">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"</button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
