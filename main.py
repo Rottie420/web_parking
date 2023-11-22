@@ -19,6 +19,10 @@ def techstuff_page():
   content = f.read()
   f.close()
   return render_template('techstuff.html', content=content)
+
+@app.route('/aboutus')
+def aboutus_page():
+  return render_template('aboutus.html')
   
 @app.route('/robots.txt')
 def robots_txt():
