@@ -13,12 +13,12 @@ def homegrown_page():
   f.close()
   return render_template('homegrown.html', content=content)
   
-@app.route('/techstuff')
-def techstuff_page():
+@app.route('/blockchain')
+def blockchain_page():
   f = open('contents/productverification.txt', "r")
   content = f.read()
   f.close()
-  return render_template('techstuff.html', content=content)
+  return render_template('blockchain.html', content=content)
 
 @app.route('/aboutus')
 def aboutus_page():
