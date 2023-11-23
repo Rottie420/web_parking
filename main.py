@@ -8,14 +8,14 @@ def landing_page():
 
 @app.route('/homegrown')
 def homegrown_page():
-  f_1 = open('contents/basics.txt', "r")
+  f_1 = open('contents/basics.txt', encoding='utf-8', mode='r')
   content_1 = f_1.read()
   f_1.close()
 
-  f_2 = open('contents/legalities.txt', "r")
+  f_2 = open('contents/legalities.txt', encoding='utf-8', mode='r')
   content_2 = f_2.read()
   f_2.close()
-  
+
   return render_template('homegrown.html', 
                          content_1=content_1,
                          content_2=content_2
