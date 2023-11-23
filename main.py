@@ -21,6 +21,15 @@ def homegrown_page():
                          content_2=content_2
                         )
 
+@app.route('/blockchain')
+def blockchain_page():
+  f_1 = open('contents/productverification.txt', encoding='utf-8', mode='r')
+  content_1 = f_1.read()
+  f_1.close()
+
+  return render_template('blockchain.html', 
+                         content_1=content_1
+                        )
 @app.route('/aboutus')
 def aboutus_page():
   return render_template('aboutus.html')
