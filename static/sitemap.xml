@@ -5,14 +5,13 @@
 
   <!-- home page -->
   <url>
-    <loc>https://project-daddict.rottie420.repl.co/</loc>
-    <lastmod>2023-01-01</lastmod>
+    <loc>www.techspliff.com</loc>
+    <lastmod>2023-23-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
      <image:image>
-        <image:loc>https://project-daddict.rottie420.repl.co/img_1.png</image:loc>
+        <image:loc>www.techspliff.com/img_1.png</image:loc>
         <image:caption>home grown weed</image:caption>
-        <image:geo_location>canda</image:geo_location>
         <image:title>weed</image:title>
      </image:image>
   </url>
