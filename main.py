@@ -9,16 +9,17 @@ def landing_page():
 @app.route('/homegrown')
 def homegrown_page():
   f = open('contents/basics.txt', "r")
-  content = f.read()
+  content_1 = f.read()
   f.close()
-  return render_template('homegrown.html', content=content)
+
+  f = open('contents/legalities.txt', "r")
+  content_2 = f.read()
+  f.close()
   
-@app.route('/blockchain')
-def blockchain_page():
-  f = open('contents/productverification.txt', "r")
-  content = f.read()
-  f.close()
-  return render_template('blockchain.html', content=content)
+  return render_template('homegrown.html', 
+                         content_1=content_1,
+                         content_2=content_2
+                        )
 
 @app.route('/aboutus')
 def aboutus_page():
