@@ -27,8 +27,13 @@ def blockchain_page():
   content_1 = f_1.read()
   f_1.close()
 
+  f_2 = open('contents/zkp.txt', encoding='utf-8', mode='r')
+  content_2 = f_2.read()
+  f_2.close()
+  
   return render_template('blockchain.html', 
-                         content_1=content_1
+                         content_1=content_1,
+                         content_2=content_2
                         )
 @app.route('/aboutus')
 def aboutus_page():
