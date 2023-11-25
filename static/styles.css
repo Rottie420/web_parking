@@ -1,7 +1,27 @@
 body {
-    background-image: linear-gradient(to top, #051937, #123d5a, #2d647a, #528d98, #7fb7b4);
+    background-image: linear-gradient(to top, #7fb7b4, #528d98, #2d647a, #123d5a, #051937);
 }
 
+
+.dropdown-item {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+#headingOne {
+    background-color: #123d5a;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color:  #fff;
+}
 
 #content {
     font-family: 'Open Sans';
