@@ -23,11 +23,11 @@ def homegrown_page():
 
 @app.route('/blockchain')
 def blockchain_page():
-  f_1 = open('contents/productverification.txt', encoding='utf-8', mode='r')
+  f_1 = open('contents/blockchain_1.txt', encoding='utf-8', mode='r')
   content_1 = f_1.read()
   f_1.close()
 
-  f_2 = open('contents/zkp.txt', encoding='utf-8', mode='r')
+  f_2 = open('contents/blockchain_2.txt', encoding='utf-8', mode='r')
   content_2 = f_2.read()
   f_2.close()
   
