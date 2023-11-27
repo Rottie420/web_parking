@@ -31,7 +31,7 @@ body {
 
 
 .navbar a {
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 #headingOne {
@@ -126,13 +126,13 @@ a {
 #close-overlay-btn {
     position: fixed;
     top: 10px;
-    right: 0;
+    right: -1px;
     background-color: transparent;
     cursor: pointer;
-    height: 30px;
-    width: 30px;
-    padding-left: 5px;
+    height: 28px;
+    width: 28px;
+    padding-left: 7px;
     padding-top: 5px;
-    padding-right: 2px;
-    padding-bottom: 5px;
+    padding-right: 0px;
+    padding-bottom: 7px;
   
