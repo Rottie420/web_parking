@@ -30,11 +30,24 @@ def blockchain_page():
   f_2 = open('contents/blockchain_2.txt', encoding='utf-8', mode='r')
   content_2 = f_2.read()
   f_2.close()
+
+  f_3 = open('contents/blockchain_3.txt', encoding='utf-8', mode='r')
+  content_3 = f_3.read()
+  f_3.close()
+
+  f_4 = open('contents/blockchain_4.txt', encoding='utf-8', mode='r')
+  content_4 = f_4.read()
+  f_4.close()
+
   
   return render_template('blockchain.html', 
                          content_1=content_1,
-                         content_2=content_2
+                         content_2=content_2,
+                         content_3=content_3,
+                         content_4=content_4
                         )
+
+
 @app.route('/aboutus')
 def aboutus_page():
   return render_template('aboutus.html')

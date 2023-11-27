@@ -159,10 +159,56 @@
                       </div>
                     </div>
                   
-                </div>
-            </div>
-        </div>
+        
 
+          <div class="card h-100">
+                        <h5 class="card-header" role="tab" id="headingOne">
+                            <p data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="d-block">
+                                <i class="fa fa-chevron-down pull-right"></i>#3 Digital Ledger
+                            </p>
+                        </h5>
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <!-- img-size 600x350px -->
+                            <img src="static/zkp.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="btn btn-secondary">blockchain</p>
+                              <h3>Transforming Transactions in the Digital Age:</h3>
+                              {% for paragraph in content_3.split('\n') %}
+                                  <p id="content">{{ paragraph }}</p>
+                              {% endfor %}
+                            </div>
+
+                        </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="card h-100">
+                        <h5 class="card-header" role="tab" id="headingOne">
+                            <p data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="d-block">
+                                <i class="fa fa-chevron-down pull-right"></i>#4 Smart Contracts
+                            </p>
+                        </h5>
+                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <!-- img-size 600x350px -->
+                            <img src="static/zkp.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="btn btn-secondary">blockchain</p>
+                              <h3>Making Digital Agreements Easy:</h3>
+                              {% for paragraph in content_4.split('\n') %}
+                                  <p id="content">{{ paragraph }}</p>
+                              {% endfor %}
+                            </div>
+
+                        </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+          
         <!-- donate-clicks!!! -->
         <div class="container img-fluid" id="carousel-img">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
