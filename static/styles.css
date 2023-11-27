@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to top, #7fb7b4, #528d98, #2d647a, #123d5a, #051937);
+    background-image: linear-gradient(to bottom, #000000, #0c0b0b, #141414, #1b1a1a, #212020);
 }
 
 
@@ -20,13 +20,13 @@ body {
         margin: auto;
     }
 
-    #bottom-margin {
-        margin-top: 100px;
-    }
-
     #open-overlay-btn {
         visibility: hidden;
       }
+}
+
+#bottom-margin {
+    margin-top: 100px;
 }
 
 
@@ -34,30 +34,42 @@ body {
     margin-right: 25px;
 }
 
+#navbarSupportedContent {
+    font-size: 16px;
+}
+
+#motto {
+    font-family: 'Roboto Condensed';
+    color:  #adadad;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+
 #headingOne {
-    background-color: #123d5a;
+    background-color: #0c0b0b;
     height: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 7px;
     padding-right: 7px;
-    font-family: 'Open Sans';
+    font-family: 'Roboto';
     font-size: 20px;
     font-weight: bold;
-    color:  #fff;
+    color:  #adadad;
 }
 
 #content {
-    font-family: 'Open Sans';
+    font-family: 'Roboto';
     font-size: 16px;
 }
 
 #nav-list {
-    font-family: 'Open Sans';
+    font-family: 'Roboto';
     font-size: 16px;
     font-weight: bold;
     line-height: 2.5em;
-    color:  #fff;
+    color: #adadad;
 }
 
 #photo-1 {
@@ -102,15 +114,15 @@ a {
 }
 
 #overlay-content {
-    background-color: #051937;
+    background-color: #0c0b0b;
     padding: 50px;
     width: 100vw;
     height: 100vh;
     padding-top: 120px;
-    font-family: 'DejaVu Sans', sans-serif;;
-    font-size: 28px;
-    font-weight: bold;
+    font-family: 'Roboto Condensed';
+    font-size: 32px;
     line-height: 2.0em;
+    color: #adadad;
 }
 
 #open-overlay-btn {
@@ -135,4 +147,4 @@ a {
     padding-top: 5px;
     padding-right: 0px;
     padding-bottom: 7px;
-  
+
