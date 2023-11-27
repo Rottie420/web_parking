@@ -137,14 +137,14 @@ a {
 
 #close-overlay-btn {
     position: fixed;
-    top: 10px;
+    top: 8px;
     right: -1px;
     background-color: transparent;
     cursor: pointer;
     height: 28px;
     width: 28px;
     padding-left: 7px;
-    padding-top: 5px;
+    padding-top: 0;
     padding-right: 0px;
     padding-bottom: 7px;
 
