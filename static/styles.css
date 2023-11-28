@@ -20,7 +20,7 @@ body {
         margin: auto;
     }
 
-    #open-overlay-btn {
+#open-overlay-btn {
         visibility: hidden;
       }
 }
@@ -49,15 +49,16 @@ body {
 #headingOne {
     background-color: #0c0b0b;
     height: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     padding-left: 7px;
     padding-right: 7px;
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: bold;
     color:  #adadad;
+    border-radius: 3px;
+
 }
+
 
 #content {
     font-family: 'Roboto';
@@ -147,4 +148,6 @@ a {
     padding-top: 0;
     padding-right: 0px;
     padding-bottom: 7px;
+
+
 

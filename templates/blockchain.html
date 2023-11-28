@@ -52,7 +52,11 @@
                           <li>
                               <a href="/blockchain" style="text-decoration: none;color: white;">blockchain</a>
                           </li>
-
+ 
+                          <li>
+                              <a href="/aboutus" style="text-decoration: none;color: white;">wallet</a>
+                          </li>
+                        
                           <li>
                               <a href="/aboutus" style="text-decoration: none;color: white;">about us</a>
                           </li>
@@ -77,38 +81,26 @@
               </script>
 
               <!-- Desktop Navbar -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: relative; left: 16%;">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: relative; left: 14%;">
                   <ul class="navbar-nav">
                     <li class="nav-item">
                       <a class="nav-link" href="/">Home</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Articles
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/homegrown">Homegrown</a></li>
-                        <li><a class="dropdown-item" href="/blockchain">Blockchain</a></li>
-                      </ul>      
+                    <li class="nav-item">
+                      <a class="nav-link" href="/homegrown">Homegrown</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Others
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Some ideas</a></li>
-                        <li><a class="dropdown-item" href="#">Some ideas</a></li>
-                      </ul>      
+                    <li class="nav-item">
+                      <a class="nav-link" href="/blockchain">Blockchain</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Wallet</a>
                     </li>
 
                     <li class="nav-item">
                       <a class="nav-link" href="/aboutus">About us</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Donate</a>
                     </li>
 
                   </ul>
@@ -121,7 +113,7 @@
           <div class="row justify-content-md-center">
             <div class="col-md-8">  
                 <div id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="card h-100">
+                    <div class="card h-100" style="margin-bottom: 5px;">
                       <h5 class="card-header" role="tab" id="headingOne">
                           <p data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block">
                               <i class="fa fa-chevron-down pull-right"></i>#1 What is Blockchain?
@@ -140,7 +132,7 @@
                       </div>
                     </div>
 
-                    <div class="card h-100">
+                    <div class="card h-100" style="margin-bottom: 5px;">
                       <h5 class="card-header" role="tab" id="headingOne">
                           <p data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="d-block">
                               <i class="fa fa-chevron-down pull-right"></i>#2 The Decentralization
@@ -159,7 +151,7 @@
                       </div>
                     </div>
                   
-                    <div class="card h-100">
+                    <div class="card h-100" style="margin-bottom: 5px;">
                         <h5 class="card-header" role="tab" id="headingOne">
                             <p data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="d-block">
                                 <i class="fa fa-chevron-down pull-right"></i>#3 Digital Ledger
@@ -178,7 +170,7 @@
                         </div>
                     </div>
 
-                    <div class="card h-100">
+                    <div class="card h-100" style="margin-bottom: 5px;">
                         <h5 class="card-header" role="tab" id="headingOne">
                             <p data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="d-block">
                                 <i class="fa fa-chevron-down pull-right"></i>#4 Smart Contracts
@@ -195,7 +187,7 @@
                               {% endfor %}
                             </div>
                         </div>
-                      </div>
+                    </div>
 
                   </div>
               </div>
