@@ -1,4 +1,5 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, request, redirect, jsonify
+import json
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
@@ -8,11 +9,11 @@ def landing_page():
 
 @app.route('/homegrown')
 def homegrown_page():
-  f_1 = open('contents/basics.txt', encoding='utf-8', mode='r')
+  f_1 = open('contents/homegrown_1.txt', encoding='utf-8', mode='r')
   content_1 = f_1.read()
   f_1.close()
 
-  f_2 = open('contents/legalities.txt', encoding='utf-8', mode='r')
+  f_2 = open('contents/homegrown_2.txt', encoding='utf-8', mode='r')
   content_2 = f_2.read()
   f_2.close()
 
@@ -64,6 +65,26 @@ def sitemap():
 def sitemap_img():
     return send_from_directory(app.static_folder, 'img_1.png')
 
+def get_subscribers():
+  with open('subscribers.json', 'r') as file:
+      return json.load(file)
+
+
+def save_subscriber(email):
+  subscribers = get_subscribers()
+  subscribers.append(email)
+  with open('subscribers.json', 'w') as file:
+      json.dump(subscribers, file, indent=2)
+
+@app.route('/subscribe', methods=['POST'])
+def subscribe():
+  email = request.form.get('email')
+  save_subscriber(email)
+  return redirect('/')
+
+@app.route('/subscribers')
+def subscribers():
+  return jsonify(get_subscribers())
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

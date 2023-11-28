@@ -7,13 +7,13 @@
 
         <!-- css directory -->
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-        
+
         <!-- fonts-style -->
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-      
+
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -22,10 +22,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </head>
-  
-    <header>
+
+    <header> 
     </header>
-  
+
     <body>
         <!-- navbar-button -->
         <nav class="navbar navbar-expand-lg navbar-dark text-info shadow-5-strong">
@@ -54,12 +54,27 @@
                           </li>
 
                           <li>
-                              <a href="/aboutus" style="text-decoration: none;color: white;">wallet</a>
+                              <a href="/aboutus" style="text-decoration: none;color: white;">news</a>
                           </li>
-                        
+
+                          <li>
+                              <a href="/aboutus" style="text-decoration: none;color: white;">spotlight</a>
+                          </li>
+
                           <li>
                               <a href="/aboutus" style="text-decoration: none;color: white;">about us</a>
                           </li>
+
+                          <div class="container" id="bottom-margin">
+                            <div class="row justify-content-center align-items-center">
+                              <div class="col-12">    
+                                    <form action="/subscribe" method="post" class="input-group mb-3">
+                                         <input type="email" id="email" name="email" required class="form-control" placeholder="Enter e-mail address" aria-label="Enter e-mail address" aria-describedby="button-addon2">
+                                         <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Subscribe</button>
+                                    </form>
+                              </div>
+                            </div>
+                          </div>
 
                       </ul>
                       <a id="close-overlay-btn" onclick="closeOverlay()">
@@ -81,7 +96,7 @@
               </script>
 
               <!-- Desktop Navbar -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: relative; left: 14%;">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: relative; left: 10%;">
                   <ul class="navbar-nav">
                     <li class="nav-item">
                       <a class="nav-link" href="/">Home</a>
@@ -96,9 +111,13 @@
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Wallet</a>
+                      <a class="nav-link" href="#">News</a>
                     </li>
-                    
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Spotlight</a>
+                    </li>
+
                     <li class="nav-item">
                       <a class="nav-link" href="/aboutus">About us</a>
                     </li>
@@ -113,15 +132,15 @@
           <div class="row justify-content-md-center">
             <div class="col-md-8">  
                 <div id="accordion" role="tablist" aria-multiselectable="true">
+                  
                     <div class="card h-100" style="margin-bottom: 5px;">
                       <h5 class="card-header" role="tab" id="headingOne">
                           <p data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block">
-                              <i class="fa fa-chevron-down pull-right"></i>#1 Growing Cannabis
+                              <i class="fa fa-chevron-down pull-right"></i>#1 Growing Your Own
                           </p>
                       </h5>
                       <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-                          <!-- img-size 600x350px -->
-                          <img src="static/spacegrown.jpg" class="card-img-top" alt="...">
+                          <img src="static/homegrown_1.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <p class="btn btn-secondary">homegrown</p>
                               <h3>Basic Steps:</h3>
@@ -139,22 +158,21 @@
                           </p>
                       </h5>
                       <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                          <!-- img-size 600x350px -->
-                          <img src="static/leagalization.jpg" class="card-img-top" alt="...">
+                          <img src="static/homegrown_2.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <p class="btn btn-secondary">homegrown</p>
-                              <h3>Legalities:</h3>
-                              {% for paragraph in content_2.split('\n') %}
-                                  <p id="content">{{ paragraph }}</p>
-                              {% endfor %}
-                          </div> 
+                            <h3>Legalities:</h3>
+                            {% for paragraph in content_2.split('\n') %}
+                                <p id="content">{{ paragraph }}</p>
+                            {% endfor %}
+                          </div>
                       </div>
                     </div>
-                  
+
                 </div>
-            </div>
-        </div>
-            
+              </div>
+          </div>
+
         <!-- donate-clicks!!! -->
         <div class="container img-fluid" id="carousel-img">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -163,7 +181,7 @@
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-              
+
                 <div class="carousel-inner">
                   <a href="http://flythrifty.com" target="_blank"> 
                     <div class="carousel-item active">
@@ -173,7 +191,7 @@
                     </div>
                   </a>
                 </div>
-              
+
                 <div class="carousel-item">
                     <a href="http://foodthrifty.com" target="_blank"> 
                         <img src="static/ad_2.jpg" class="d-block w-100" alt="...">
@@ -182,7 +200,7 @@
                         </div>
                     </a> 
                 </div>
-              
+
                 <div class="carousel-item">
                     <a href="http://moderntechai.com" target="_blank"> 
                         <img src="static/ad_3.jpg" class="d-block w-100" alt="...">
@@ -191,7 +209,7 @@
                         </div>
                     </a>
                 </div>
-  
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -204,3 +222,4 @@
         </div>
     </body>
 </html>
+

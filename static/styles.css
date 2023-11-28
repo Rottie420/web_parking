@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(to bottom, #000000, #0c0b0b, #141414, #1b1a1a, #212020);
+    overflow-y: scroll;
 }
 
 
@@ -20,9 +21,23 @@ body {
         margin: auto;
     }
 
-#open-overlay-btn {
+    #open-overlay-btn {
         visibility: hidden;
       }
+
+    #who-we-are {
+        font-family: 'Roboto Condensed';
+        color:  #adadad;
+        text-align: center;
+        margin-bottom: 170px;
+    }
+
+    #join-us {
+        font-family: 'Roboto Condensed';
+        color:  #adadad;
+        text-align: center;
+        margin-bottom: 170px;
+    }
 }
 
 #bottom-margin {
@@ -43,6 +58,26 @@ body {
     color:  #adadad;
     text-align: center;
     margin-bottom: 70px;
+}
+
+
+#who-we-are {
+    font-family: 'Roboto Condensed';
+    color:  #adadad;
+    text-align: center;
+    margin-bottom: 170px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+#join-us {
+    font-family: 'Roboto Condensed';
+    color:  #adadad;
+    text-align: center;
+    margin-bottom: 170px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
@@ -116,13 +151,13 @@ a {
 
 #overlay-content {
     background-color: #0c0b0b;
-    padding: 50px;
+    padding: 20px;
     width: 100vw;
     height: 100vh;
     padding-top: 120px;
     font-family: 'Roboto Condensed';
-    font-size: 32px;
-    line-height: 2.0em;
+    font-size: 26px;
+    line-height: 1.8em;
     color: #adadad;
 }
 
@@ -138,7 +173,7 @@ a {
 
 #close-overlay-btn {
     position: fixed;
-    top: 8px;
+    top: 15px;
     right: -1px;
     background-color: transparent;
     cursor: pointer;
@@ -148,6 +183,3 @@ a {
     padding-top: 0;
     padding-right: 0px;
     padding-bottom: 7px;
-
-
-
