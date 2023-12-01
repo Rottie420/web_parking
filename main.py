@@ -1,5 +1,10 @@
 from flask import Flask, render_template, send_from_directory, request, redirect, jsonify
+from ccpayment import CCPaymentClass
+import os
+import time
 import json
+
+from flask.helpers import url_for
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
@@ -85,6 +90,52 @@ def subscribe():
 @app.route('/subscribers')
 def subscribers():
   return jsonify(get_subscribers())
+
+@app.route('/products')
+def payment_page():
+  return render_template('ccpayment.html')
+
+@app.route('/checkout', methods=['POST'])
+def checkout_page():
+  app_id = os.getenv("app_id")
+  app_secret = os.getenv("app_secret")
+  cp = CCPaymentClass(app_id, app_secret)
+
+  if request.method == 'POST':
+      total = request.form['total-amount']
+      print(total)
+  else:
+    pass
+
+  if cp.webhook(data_str='', timestamp='', signature=''):
+    print('TestWebhookValidate: verify success')
+  else:
+    print('TestWebhookValidate: verify error')
+
+  data, is_verify = cp.checkout_url(product_price=total,
+    merchant_order_id=str(int(time.time())),
+    order_valid_period=300,
+    product_name='product',
+    return_url='return_url')
+
+  if is_verify:
+    print("TestCheckoutUrl: verify success")
+  else:
+    print("TestCheckoutUrl :verify error")
+
+  url = data['data']['payment_url']
+  return redirect(url)
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

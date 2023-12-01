@@ -13,7 +13,7 @@ body {
     margin-left: 17px
 }
 
-@media (min-width: 912px) {
+@media screen and (min-width: 768px) {
     .navbar-brand {
         position: relative;
         left: 16%;
@@ -37,6 +37,14 @@ body {
         color:  #adadad;
         text-align: center;
         margin-bottom: 170px;
+    }
+
+    #invoice {
+      background: white;
+      border: none;
+      border-radius: 15px;
+      color: black;
+      padding:  15px;
     }
 }
 
@@ -183,3 +191,35 @@ a {
     padding-top: 0;
     padding-right: 0px;
     padding-bottom: 7px;
+}
+
+
+input[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 36px;
+  color: black;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  background: transparent;
+  box-shadow: none;
+  font-size: 36px;
+  color: black;
+}
+
+
+#invoice {
+  background: white;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  padding: 15px;
+}
