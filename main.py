@@ -22,9 +22,14 @@ def homegrown_page():
   content_2 = f_2.read()
   f_2.close()
 
+  f_3 = open('contents/homegrown_3.txt', encoding='utf-8', mode='r')
+  content_3 = f_3.read()
+  f_3.close()
+
   return render_template('homegrown.html', 
                          content_1=content_1,
-                         content_2=content_2
+                         content_2=content_2,
+                         content_3=content_3
                         )
 
 @app.route('/blockchain')
