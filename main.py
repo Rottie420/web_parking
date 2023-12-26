@@ -4,7 +4,6 @@ import os
 import time
 import json
 
-from flask.helpers import url_for
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 

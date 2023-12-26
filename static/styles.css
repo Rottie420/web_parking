@@ -223,3 +223,10 @@ select.form-control:focus {
   color: black;
   padding: 15px;
 }
+
+#spliffpay {
+    font-family: 'Roboto Condensed';
+    color:  #adadad;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
