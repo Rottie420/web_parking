@@ -101,8 +101,8 @@ def payment_page():
 
 @app.route('/checkout', methods=['POST'])
 def checkout_page():
-  app_id = os.getenv("app_id")
-  app_secret = os.getenv("app_secret")
+  app_id = 'Wg1MXdt20wScTlvk'
+  app_secret = 'e07f5313cbfaf503b6e9c83cf5a41248'
   cp = CCPaymentClass(app_id, app_secret)
 
   if request.method == 'POST':
