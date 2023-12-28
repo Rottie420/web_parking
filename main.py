@@ -1,7 +1,4 @@
 from flask import Flask, render_template, send_from_directory, request, redirect, jsonify
-from ccpayment import CCPaymentClass
-import os
-import time
 import json
 
 
@@ -96,46 +93,24 @@ def subscribers():
   return jsonify(get_subscribers())
 
 @app.route('/products')
-def payment_page():
-  return render_template('ccpayment.html')
+def products_page():
+  f_1 = open('contents/faq_1.txt', encoding='utf-8', mode='r')
+  content_1 = f_1.read()
+  f_1.close()
 
-@app.route('/checkout', methods=['POST'])
-def checkout_page():
-  app_id = 'Wg1MXdt20wScTlvk'
-  app_secret = 'e07f5313cbfaf503b6e9c83cf5a41248'
-  cp = CCPaymentClass(app_id, app_secret)
+  f_2 = open('contents/faq_2.txt', encoding='utf-8', mode='r')
+  content_2 = f_2.read()
+  f_2.close()
 
-  if request.method == 'POST':
-      total = request.form['total-amount']
-      print(total)
-  else:
-    pass
+  f_3 = open('contents/faq_3.txt', encoding='utf-8', mode='r')
+  content_3 = f_3.read()
+  f_3.close()
 
-  if cp.webhook(data_str='', timestamp='', signature=''):
-    print('TestWebhookValidate: verify success')
-  else:
-    print('TestWebhookValidate: verify error')
-
-  data, is_verify = cp.checkout_url(product_price=total,
-    merchant_order_id=str(int(time.time())),
-    order_valid_period=300,
-    product_name='product',
-    return_url='return_url')
-
-  if is_verify:
-    print("TestCheckoutUrl: verify success")
-  else:
-    print("TestCheckoutUrl :verify error")
-
-  url = data['data']['payment_url']
-  return redirect(url)
-
-
-
-
-
-
-
+  f_4 = open('contents/homegrown_1.txt', encoding='utf-8', mode='r')
+  content_4 = f_4.read()
+  f_4.close()
+  
+  return render_template('products.html', content_1=content_1, content_2=content_2, content_3=content_3, content_4=content_4)
 
 
 

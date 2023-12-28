@@ -1,0 +1,5 @@
+1. Why can't I see any order history in the app?
+
+we currently dont support order history as we use metamask wallet for transactions.
+To view your order history, open the MetaMask extension or mobile app and navigate to the "Activity" or "History" tab. Here, you can find a list of your recent transactions, including orders.
+or you can view your history through etherium public scanners.

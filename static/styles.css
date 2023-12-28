@@ -226,7 +226,7 @@ select.form-control:focus {
 
 #spliffpay-logo {
     width: 200px;
-    height: 65px;  
+    height: 70px;  
 }
 
 #spliffpay {
@@ -250,9 +250,15 @@ select.form-control:focus {
 }
 
 #p2p {
-  height: 180px;
+  height: 200px;
   width: 250px;
   margin-bottom: 50px;
 }
 
 
+#faq {
+    font-family: 'Roboto';
+    font-weight: bold;
+    color:  #adadad;
+    margin-bottom: 20px;
+}

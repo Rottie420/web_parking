@@ -1,0 +1,37 @@
+1. What is this platform, and how does it work without registration?
+
+This platform operates on the principle of decentralized authentication using Metamask wallets. Instead of traditional registration, users can log in and access the platform using their Metamask wallet address.
+
+2. Do I need to create an account or provide personal information?
+
+No, there is no need to create an account or share any personal information. Your Metamask wallet address serves as your unique identifier, ensuring privacy and security.
+
+3. How do I log in without registration?
+
+Simply connect your Metamask wallet to the platform. Click on the login button, and the platform will prompt you to sign a transaction using Metamask. Once signed, you'll be granted access without the need for a separate account.
+
+4. What is Metamask, and why is it used for login?
+
+Metamask is a cryptocurrency wallet and gateway to the decentralized web. It allows users to manage their Ethereum-based assets and interact with decentralized applications (dApps). We use Metamask for login to enhance security and provide a seamless decentralized experience.
+
+5. Is my information secure using Metamask for login?
+
+Yes, Metamask uses industry-standard encryption and secure key management practices. Your private keys never leave your device, ensuring that your information remains secure.
+
+6. Can I use any other wallet besides Metamask for login?
+
+Currently, our platform supports Metamask for wallet-based login. We recommend using Metamask for the best user experience and compatibility.
+
+7. What if I lose access to my Metamask wallet?
+
+It's crucial to securely back up your Metamask seed phrase. If you lose access to your wallet, you can recover it using the seed phrase. Always keep your seed phrase private and stored in a safe place.
+
+8. Can I use this platform anonymously with Metamask?
+
+While the platform doesn't require traditional registration, please be aware that blockchain transactions are public. Your wallet address and transaction history may be visible on the Ethereum blockchain. Exercise caution and follow best practices for privacy if anonymity is a concern.
+
+9. How do I disconnect my Metamask wallet from the platform?
+
+You can disconnect your Metamask wallet by logging out or disconnecting within the platform settings. Ensure you securely manage your Metamask wallet to maintain control over your information.
+
+Please note that this FAQ is designed for informational purposes, and it's essential to provide users with clear instructions on using their Metamask wallet securely.
