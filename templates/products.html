@@ -127,54 +127,84 @@
             </div>         
         </nav>
 
-        <div class="container" id="bottom-margin">
-            <div class="row justify-content-center align-items-center">
-              <div class="row text-center">
-                <div class="col-12 style="color: #adadad;">
-                    <img src="static/spliffpay_logo6.png" class="img-fluid" alt="..." id="spliffpay-logo">
-                    <div id="spliffpay">
-                      <h5>Streamline the invoicing process</h5>
-                      <h5>with a user-friendly interface.</h5>
-                      <h5>QR code generation for easy</h5>
-                      <h5>and accurate transfer.</h5>
-                    </div>
-                    <a href="http://www.spliffpay.biz/login" class="btn btn-primary btn-md btn-block" style="width: 200px; border-radius: 15px;">Try Spliffpay Now</a>
+      
+        <div class="container" style="margin-top: 100px; margin-bottom: 15px; overflow: hidden;">
+          <div class="row justify-content-md-center">
+            <div class="col-md-6 text-center">       
+              <video height="410" width="250" style="border: 1px solid #adadad; border-radius: 15px;" controls autoplay loop muted playsinline>
+                  <source src="static/spliffpay_mobile.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-6 text-center">
+              <a href="http://www.spliffpay.biz/login" class="btn btn-primary btn-md btn-block" style="width: 250px; border-radius: 15px; margin-bottom: 250px;" >Try Spliffpay Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 200px;">
+          <div class="row justify-content-center align-items-center">
+            <div class="row text-center">
+              <div class="col-12 style="color: #adadad;">
+                <img src="static/spliffpay_logo6.png" class="img-fluid" alt="..." id="spliffpay-logo">
+                <div id="spliffpay">
+                  <h5>Streamline the invoicing process</h5>
+                  <h5>with a user-friendly interface.</h5>
+                  <h5>QR code generation for easy</h5>
+                  <h5>and accurate transfer.</h5>
                 </div>
               </div>
             </div>
+          </div>
         </div>
 
-        <div class="container" style="margin-top: 50px; margin-bottom: 100px; overflow: hidden;">
-          <div class="row justify-content-md-center">
-              <div class="col-md-6">        
-                <div class="card h-100" id="invoice">
-                  <video height="360" controls autoplay>
-                      <source src="static/spliffpay_mobile.mp4" type="video/mp4">
-                  </video>
+        <div class="container" style="margin-bottom: 200px;">
+          <div class="row justify-content-center align-items-center">
+            <div class="row text-center">
+              <div class="col-12 style="color: #adadad;">
+                <img src="static/decentalized.png" class="img-fluid" alt="..." style="height: 150px; width: 150px;">
+                <div id="spliffpay">
+                  <h5>Decentralized login transforms</h5>
+                  <h5>traditional authentication by </h5>
+                  <h5>spreading user verification</h5>
+                  <h5>across a decentralized network,</h5>
+                  <h5>using blockchain technology.</h5>
                 </div>
-               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-6 text-center" style="margin-bottom: 200px;">   
+                <div id="spliffpay">
+                    <img src="static/p2p.png" alt="..." id="p2p">
+                    <h5>Revolutionize your transactions,</h5> 
+                    <h5>Effortlessly transfer cryptocurrency</h5>
+                    <h5>between individuals without</h5>
+                    <h5>installations or POS devices.</h5>
+                </div>
             </div>
         </div>
 
         <div class="container">
           <div class="row justify-content-md-center">
-            <div class="col-md-6 text-center" style="margin-bottom: 50px;">   
+            <div class="col-md-6 text-center" style="margin-bottom: 200px;">   
                 <div id="spliffpay">
-                    <img src="static/p2p.png" alt="..." id="p2p">
-                    <h5>Revolutionize your transactions,</h5> 
-                    <h5>Effortlessly transfer cryptocurrency</h5>
-                    <h5>between individuals without installations</h5>
-                    <h5>or POS devices. Experience seamless,</h5>
-                    <h5>secure, and instant transactions</h5>
-                    <h5>at your fingertips.</h5>      
-                </div>
-                <div id="icon-div">
-                  <img src="static/eth.png" alt="..." id="coin-png">
-                  <img src="static/axs.png" alt="..." id="coin-png">
-                  <img src="static/link.png" alt="..." id="coin-png">
-                  <img src="static/matic.png" alt="..." id="coin-png">
-                  <img src="static/shib.png" alt="..." id="coin-png">
-                  <img src="static/usdt.png" alt="..." id="coin-png">
+                  <h5 style="margin-bottom: -130px;">Currently supported Tokens/Coins.</h5> 
+                  <div id="icon-div">
+                    <img src="static/eth.png" alt="..." id="coin-png">
+                    <img src="static/axs.png" alt="..." id="coin-png">
+                    <img src="static/link.png" alt="..." id="coin-png">
+                    <img src="static/matic.png" alt="..." id="coin-png">
+                    <img src="static/shib.png" alt="..." id="coin-png">
+                    <img src="static/usdt.png" alt="..." id="coin-png">
+                  </div>
                 </div>
             </div>
         </div>
@@ -194,8 +224,6 @@
                   </h5>
                   <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
                       <div class="card-body">
-                        <p class="btn btn-secondary">spliffpay</p>
-                          <h3>No Registration, Metamask Wallet Login:</h3>
                           {% for paragraph in content_1.split('\n') %}
                               <p id="content">{{ paragraph }}</p>
                           {% endfor %}
@@ -211,8 +239,6 @@
                   </h5>
                   <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                       <div class="card-body">
-                        <p class="btn btn-secondary">spliffpay</p>
-                        <h3>No in-app order history</h3>
                         {% for paragraph in content_2.split('\n') %}
                             <p id="content">{{ paragraph }}</p>
                         {% endfor %}
@@ -228,8 +254,6 @@
                     </h5>
                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
                         <div class="card-body">
-                          <p class="btn btn-secondary">spliffpay</p>
-                          <h3>Real time token exchange rates</h3>
                           {% for paragraph in content_3.split('\n') %}
                               <p id="content">{{ paragraph }}</p>
                           {% endfor %}
@@ -245,8 +269,6 @@
                     </h5>
                     <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
                         <div class="card-body">
-                          <p class="btn btn-secondary">spliffpay</p>
-                          <h3>contact through email</h3>
                           <p>any issues regarding this app you may contact this address</p>
                           <strong>hoods0014@yahoo.com</strong>
                         </div>
