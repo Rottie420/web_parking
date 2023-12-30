@@ -131,7 +131,7 @@
         <div class="container" style="margin-top: 100px; margin-bottom: 15px; overflow: hidden;">
           <div class="row justify-content-md-center">
             <div class="col-md-6 text-center">       
-              <video height="410" width="250" style="border: 1px solid #adadad; border-radius: 15px;" controls autoplay loop muted playsinline>
+              <video height="410" width="250" style="border: 1px solid #adadad; border-radius: 15px;" autoplay loop muted playsinline>
                   <source src="static/spliffpay_mobile.mp4" type="video/mp4">
               </video>
             </div>
@@ -295,32 +295,31 @@
           </div>
         </div>
 
-       <script>
+        <script>
            document.addEventListener("DOMContentLoaded", function () {
                function updateTotal() {
                    var productCostInput = document.getElementById("product-cost");
                    var productSpan = document.getElementById("product");
-
+        
                    // Copy the value of product-cost to the product span
                    productSpan.innerText = "$" + (parseFloat(productCostInput.value) || 0).toFixed(2);
-
+        
                    var items = document.querySelectorAll("#payment li.list-group-item:not(.bg-light) span.text-muted");
                    var totalAmount = 0
-
+        
                    items.forEach(function (item) {
                        var itemPrice = parseFloat(item.innerText.replace("$", "").trim()) || 0;
                        totalAmount += itemPrice;
                    });
-
+        
                    document.getElementById("total-amount").innerText = "$" + totalAmount.toFixed(2);
                    document.getElementById("hidden-total-amount").value = totalAmount.toFixed(2);
                }
-
+        
                document.getElementById("product-cost").addEventListener("input", updateTotal);
                updateTotal();
            });
-       </script>
-
+        </script>
     </body>
 </html>
 
