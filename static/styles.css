@@ -94,9 +94,8 @@ body {
     height: 40px;
     padding-left: 7px;
     padding-right: 7px;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: bold;
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
     color:  #adadad;
     border-radius: 3px;
 
@@ -257,8 +256,17 @@ select.form-control:focus {
 
 
 #faq {
-    font-family: 'Roboto';
+    font-family: 'Roboto Condensed';
     font-weight: bold;
     color:  #adadad;
     margin-bottom: 20px;
+}
+
+#footnote {
+    margin-top: 200px; 
+    background: black;
+    font-family: 'Roboto Condensed';
+    color: #adadad; 
+    height: 50px; 
+    padding-top: 12px;
 }
