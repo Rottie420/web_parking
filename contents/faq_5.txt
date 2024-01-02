@@ -1,0 +1,3 @@
+Decentralized blockchains possess immutability.
+
+Signifying that once data is recorded, it is unalterable. Once a transaction is confirmed and marked as successful, any attempt to reverse or cancel it becomes impractical. Typically, once a transaction attains confirmation, it becomes final and is incorporated into the subsequent block.

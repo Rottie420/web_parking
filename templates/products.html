@@ -276,10 +276,40 @@
                   <div class="card h-100" style="margin-bottom: 5px;">
                       <h5 class="card-header" role="tab" id="headingOne">
                           <p data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="d-block">
-                              <i class="fa fa-chevron-down pull-right"></i>#4 Contact Us
+                              <i class="fa fa-chevron-down pull-right"></i>#4 Transactions Cost
                           </p>
                       </h5>
                       <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                          <div class="card-body">
+                            {% for paragraph in content_4.split('\n') %}
+                                <p id="content">{{ paragraph }}</p>
+                            {% endfor %}
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="card h-100" style="margin-bottom: 5px;">
+                      <h5 class="card-header" role="tab" id="headingOne">
+                          <p data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" class="d-block">
+                              <i class="fa fa-chevron-down pull-right"></i>#5 Refunds
+                          </p>
+                      </h5>
+                      <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+                          <div class="card-body">
+                            {% for paragraph in content_5.split('\n') %}
+                                <p id="content">{{ paragraph }}</p>
+                            {% endfor %}
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="card h-100" style="margin-bottom: 5px;">
+                      <h5 class="card-header" role="tab" id="headingOne">
+                          <p data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" class="d-block">
+                              <i class="fa fa-chevron-down pull-right"></i>#6 Contact Us
+                          </p>
+                      </h5>
+                      <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
                           <div class="card-body">
                             <p>any issues regarding this app you may contact this address</p>
                             <strong>hoods0014@yahoo.com</strong>
